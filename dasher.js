@@ -8,7 +8,7 @@ let button = new DashButton(DASH_BUTTON_MAC_ADDRESS);
 let subscription = button.addListener(async () => {
     console.log('buuttooon');
     request.post(
-        'http://rey.local:8123/api/services/light/turn_off',
+        'http://rey.local:8123/api/services/light/toggle',
         { json: {
             entity_id: "light.porch"
         }}
